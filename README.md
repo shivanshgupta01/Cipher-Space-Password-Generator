@@ -4,6 +4,14 @@
 
 A high-performance, entirely client-side web app designed for power users who need robust, highly customizable password generation combined with a secure, offline-first storage vault. 
 
+![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Built with TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Styled with Tailwind](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+![Bundled with Vite](https://img.shields.io/badge/Bundled%20with-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![State by Zustand](https://img.shields.io/badge/State-Zustand-764ABC?style=flat-square)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)
+![100% Client-Side](https://img.shields.io/badge/100%25-Client--Side-10B981?style=flat-square)
+![Local Storage](https://img.shields.io/badge/Data-Local%20Storage-10B981?style=flat-square)
 ---
 
 ## 🌐 **Live Demo:** 
