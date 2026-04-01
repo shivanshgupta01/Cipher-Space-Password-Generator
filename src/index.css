@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #000000;
+  color: #ededed;
+  color-scheme: dark;
+}
+
+/* ... rest of your CSS ... */
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Stage-lit Background */
+.app-shell {
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(17, 24, 39, 1) 0%, #000000 100%);
+  position: relative;
+  overflow-x: hidden;
+  letter-spacing: -0.01em; /* Pro typography tightening */
+}
+
+/* Pro Surfaces */
+.surface {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.5);
+}
+
+.surface-sunken {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sleek Buttons */
+.btn-pro {
+  background: linear-gradient(180deg, rgba(99, 102, 241, 1) 0%, rgba(79, 70, 229, 1) 100%);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2), 
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(79, 70, 229, 1);
+  color: white;
+  transition: all 0.15s ease;
+}
+
+.btn-pro:hover:not(:disabled) {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2), 
+    0 4px 8px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(79, 70, 229, 1),
+    0 0 20px rgba(79, 70, 229, 0.4);
+}
+
+.btn-pro:active:not(:disabled) {
+  transform: translateY(0);
+  filter: brightness(0.9);
+}
+
+.btn-pro:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a1a1aa;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ededed;
+}
+
+/* Precision Slider */
+input[type="range"] {
+  @apply h-1 w-full appearance-none rounded-full bg-white/10;
+}
+input[type="range"]::-webkit-slider-thumb {
+  @apply h-4 w-4 appearance-none rounded-full bg-white cursor-pointer shadow-[0_0_10px_rgba(255,255,255,0.3)] border-[3px] border-indigo-500 transition-transform hover:scale-125;
+}
+
+/* Custom Scrollbar for Textareas */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
